@@ -1,0 +1,15 @@
+C:\Users\2022102020085\Documents\logica\3bimestre\HerancaATV\HerancaATV\bin\Debug\net6.0\HerancaATV.exe
+C:\Users\2022102020085\Documents\logica\3bimestre\HerancaATV\HerancaATV\bin\Debug\net6.0\HerancaATV.deps.json
+C:\Users\2022102020085\Documents\logica\3bimestre\HerancaATV\HerancaATV\bin\Debug\net6.0\HerancaATV.runtimeconfig.json
+C:\Users\2022102020085\Documents\logica\3bimestre\HerancaATV\HerancaATV\bin\Debug\net6.0\HerancaATV.dll
+C:\Users\2022102020085\Documents\logica\3bimestre\HerancaATV\HerancaATV\bin\Debug\net6.0\HerancaATV.pdb
+C:\Users\2022102020085\Documents\logica\3bimestre\HerancaATV\HerancaATV\obj\Debug\net6.0\HerancaATV.csproj.AssemblyReference.cache
+C:\Users\2022102020085\Documents\logica\3bimestre\HerancaATV\HerancaATV\obj\Debug\net6.0\HerancaATV.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\2022102020085\Documents\logica\3bimestre\HerancaATV\HerancaATV\obj\Debug\net6.0\HerancaATV.AssemblyInfoInputs.cache
+C:\Users\2022102020085\Documents\logica\3bimestre\HerancaATV\HerancaATV\obj\Debug\net6.0\HerancaATV.AssemblyInfo.cs
+C:\Users\2022102020085\Documents\logica\3bimestre\HerancaATV\HerancaATV\obj\Debug\net6.0\HerancaATV.csproj.CoreCompileInputs.cache
+C:\Users\2022102020085\Documents\logica\3bimestre\HerancaATV\HerancaATV\obj\Debug\net6.0\HerancaATV.dll
+C:\Users\2022102020085\Documents\logica\3bimestre\HerancaATV\HerancaATV\obj\Debug\net6.0\refint\HerancaATV.dll
+C:\Users\2022102020085\Documents\logica\3bimestre\HerancaATV\HerancaATV\obj\Debug\net6.0\HerancaATV.pdb
+C:\Users\2022102020085\Documents\logica\3bimestre\HerancaATV\HerancaATV\obj\Debug\net6.0\HerancaATV.genruntimeconfig.cache
+C:\Users\2022102020085\Documents\logica\3bimestre\HerancaATV\HerancaATV\obj\Debug\net6.0\ref\HerancaATV.dll
