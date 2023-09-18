@@ -13,3 +13,18 @@ C:\Users\2022102020085\Documents\logica\3bimestre\HerancaATV\HerancaATV\obj\Debu
 C:\Users\2022102020085\Documents\logica\3bimestre\HerancaATV\HerancaATV\obj\Debug\net6.0\HerancaATV.pdb
 C:\Users\2022102020085\Documents\logica\3bimestre\HerancaATV\HerancaATV\obj\Debug\net6.0\HerancaATV.genruntimeconfig.cache
 C:\Users\2022102020085\Documents\logica\3bimestre\HerancaATV\HerancaATV\obj\Debug\net6.0\ref\HerancaATV.dll
+D:\IFRO\poo\3 bimestre\herancaATV\HerancaATV\bin\Debug\net6.0\HerancaATV.exe
+D:\IFRO\poo\3 bimestre\herancaATV\HerancaATV\bin\Debug\net6.0\HerancaATV.deps.json
+D:\IFRO\poo\3 bimestre\herancaATV\HerancaATV\bin\Debug\net6.0\HerancaATV.runtimeconfig.json
+D:\IFRO\poo\3 bimestre\herancaATV\HerancaATV\bin\Debug\net6.0\HerancaATV.dll
+D:\IFRO\poo\3 bimestre\herancaATV\HerancaATV\bin\Debug\net6.0\HerancaATV.pdb
+D:\IFRO\poo\3 bimestre\herancaATV\HerancaATV\obj\Debug\net6.0\HerancaATV.csproj.AssemblyReference.cache
+D:\IFRO\poo\3 bimestre\herancaATV\HerancaATV\obj\Debug\net6.0\HerancaATV.GeneratedMSBuildEditorConfig.editorconfig
+D:\IFRO\poo\3 bimestre\herancaATV\HerancaATV\obj\Debug\net6.0\HerancaATV.AssemblyInfoInputs.cache
+D:\IFRO\poo\3 bimestre\herancaATV\HerancaATV\obj\Debug\net6.0\HerancaATV.AssemblyInfo.cs
+D:\IFRO\poo\3 bimestre\herancaATV\HerancaATV\obj\Debug\net6.0\HerancaATV.csproj.CoreCompileInputs.cache
+D:\IFRO\poo\3 bimestre\herancaATV\HerancaATV\obj\Debug\net6.0\HerancaATV.dll
+D:\IFRO\poo\3 bimestre\herancaATV\HerancaATV\obj\Debug\net6.0\refint\HerancaATV.dll
+D:\IFRO\poo\3 bimestre\herancaATV\HerancaATV\obj\Debug\net6.0\HerancaATV.pdb
+D:\IFRO\poo\3 bimestre\herancaATV\HerancaATV\obj\Debug\net6.0\HerancaATV.genruntimeconfig.cache
+D:\IFRO\poo\3 bimestre\herancaATV\HerancaATV\obj\Debug\net6.0\ref\HerancaATV.dll

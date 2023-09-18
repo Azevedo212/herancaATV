@@ -35,6 +35,9 @@ namespace HerancaATV.Classes
             if(valor <= saldoConta)
             {
                 saldoConta -= valor;
+                Console.WriteLine("Saque realizado!");
+                Console.WriteLine($"R${valor} foram sacados, saldo final da conta: R${saldoConta}");
+                
             }
             else
             {
@@ -43,9 +46,10 @@ namespace HerancaATV.Classes
             
         }
 
-        public void Depositar(double valor)
+        public void Depositar(double dep)
         {
-            saldoConta += valor;
+            saldoConta += dep;
+            Console.WriteLine("Valor total após o deposito R$" + saldoConta);
         }
     }
 }

@@ -8,23 +8,23 @@
     "net6.0": []
   },
   "packageFolders": {
-    "C:\\Users\\2022102020085\\.nuget\\packages\\": {},
+    "C:\\Users\\Azevedo\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\2022102020085\\Documents\\logica\\3bimestre\\HerancaATV\\HerancaATV\\HerancaATV.csproj",
+      "projectUniqueName": "D:\\IFRO\\poo\\3 bimestre\\herancaATV\\HerancaATV\\HerancaATV.csproj",
       "projectName": "HerancaATV",
-      "projectPath": "C:\\Users\\2022102020085\\Documents\\logica\\3bimestre\\HerancaATV\\HerancaATV\\HerancaATV.csproj",
-      "packagesPath": "C:\\Users\\2022102020085\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\2022102020085\\Documents\\logica\\3bimestre\\HerancaATV\\HerancaATV\\obj\\",
+      "projectPath": "D:\\IFRO\\poo\\3 bimestre\\herancaATV\\HerancaATV\\HerancaATV.csproj",
+      "packagesPath": "C:\\Users\\Azevedo\\.nuget\\packages\\",
+      "outputPath": "D:\\IFRO\\poo\\3 bimestre\\herancaATV\\HerancaATV\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\2022102020085\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Azevedo\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -66,7 +66,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.201\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.202\\RuntimeIdentifierGraph.json"
       }
     }
   }

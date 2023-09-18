@@ -30,13 +30,14 @@ namespace HerancaATV.Classes
         {
             if(valor <= saldoConta + LimiteChequeEspecial)
             {
-                saldoConta = saldoConta - valor;
+                saldoConta -= valor;
+                Console.WriteLine("Saque realizado!");
             }
             else
             {
                 Console.WriteLine("Saldo insuficiente!");
             }
-            saldoConta -= valor;
+           
         }
 
 

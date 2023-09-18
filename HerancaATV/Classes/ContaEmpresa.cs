@@ -32,9 +32,10 @@ namespace HerancaATV.Classes
             if (ValorEmprestimo <= Limite_Emprestimo)
             {
                 saldoConta +=  ValorEmprestimo;
-                Total_Emprestimo += ValorEmprestimo;
+                Total_Emprestimo = Limite_Emprestimo - ValorEmprestimo;
 
                 Console.WriteLine($"Empréstimo de R$ {ValorEmprestimo} realizado com sucesso.");
+                Console.WriteLine($"Você tem um total de {Total_Emprestimo} de limite");
             }
             else
             {
@@ -44,22 +45,28 @@ namespace HerancaATV.Classes
 
         public override void Sacar(double valor)
         {
-            
-            if(saldoConta >= 5000)
+            if(valor > saldoConta)
             {
-                valor = valor + 5;
-                saldoConta = saldoConta - valor;
-                Console.WriteLine("Saque foi taxado no valor de R$5!");
-                
-                
-            }         
+                Console.WriteLine("valor do saque excede o valor da conta!");
+            }
+
+            else if (saldoConta >= 5000)
+            {
+                valor += 5;
+                saldoConta -= valor;
+                Console.WriteLine("Saque realizado! foi taxado no valor de R$5,00!");
+            }
+
             else
             {
-                saldoConta = valor;
+                saldoConta -= valor;
                 Console.WriteLine("Saque realizado!");
             }
 
-            
-        }   
+
+
+
+
+        }
     }
 }
