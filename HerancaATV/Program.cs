@@ -54,7 +54,8 @@ class Program
                             case 1:
                                 Console.Write("Digite o valor do saque: ");
                                 int saque = Convert.ToInt32(Console.ReadLine());
-                                n.Sacar(saque);          
+                                n.Sacar(saque);
+                                Console.WriteLine($"saldo atualizado: {n.saldoConta} ");
                                 break;
                             case 2:
                                 Console.Write("Digite o valor do depósito: ");
@@ -125,7 +126,8 @@ class Program
                             case 2:
                                 Console.Write("Digite o valor do saque: ");
                                 int saque = Convert.ToInt32(Console.ReadLine());
-                                c.Sacar(saque);                         
+                                c.Sacar(saque);
+                                Console.WriteLine($"saldo atualizado: {c.saldoConta} ");
                                 break;
 
                             case 3:
@@ -190,6 +192,7 @@ class Program
                                 Console.Write("Digite o valor do saque: ");
                                 int saque = Convert.ToInt32(Console.ReadLine());
                                 estudante.Sacar(saque);
+                                Console.WriteLine($"saldo atualizado: {estudante.saldoConta} ");
                                 break;
                             case 2:
                                 Console.Write("Digite o valor do depósito: ");
