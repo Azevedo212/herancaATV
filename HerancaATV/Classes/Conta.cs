@@ -30,13 +30,13 @@ namespace HerancaATV.Classes
         
         }
 
-        public virtual void Sacar(double valor)
+        public virtual void Sacar(double saque)
         {
-            if(valor <= saldoConta)
+            if(saque <= saldoConta)
             {
-                saldoConta -= valor;
+                saldoConta -= saque;
                 Console.WriteLine("Saque realizado!");
-                Console.WriteLine($"R${valor} foram sacados, saldo final da conta: R${saldoConta}");
+                Console.WriteLine($"R${saque} foram sacados, saldo atualizado: {saldoConta.ToString("c2")} \n");
                 
             }
             else
@@ -48,8 +48,16 @@ namespace HerancaATV.Classes
 
         public void Depositar(double dep)
         {
-            saldoConta += dep;
-            Console.WriteLine("Valor total após o deposito R$" + saldoConta);
+            if(dep >= 0)
+            {
+                saldoConta += dep;
+                Console.WriteLine("Saldo após o depósito atualizado: " + saldoConta.ToString("c2") + "\n");
+            }
+            else
+            {
+                Console.WriteLine("Operação inválida!");
+            }
+            
         }
     }
 }

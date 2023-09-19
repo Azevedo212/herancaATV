@@ -2,47 +2,213 @@
 
 class Program
 {
+    static List<Conta> contas = new List<Conta>();
     static void Main(string[] args)
-    { /*
-        Conta c = new Conta();       
-        c.NumConta = 1;
-        c.Agencia = "181";
-        c.TitularConta = "fabio";
-        c.saldoConta = 700;
+    {
+        int nConta = 1;
 
-        Console.WriteLine(c.saldoConta);
+        while (true)
+        {
+            Conta conta = new Conta();
+            Console.WriteLine("-------------------------");
+            Console.WriteLine("BANCO");
+            Console.WriteLine("-------------------------");
 
-        
-        ContaEmpresa e = new ContaEmpresa();
+            Console.WriteLine("\n1 - Criar conta normal \n2- Criar Conta empresarial \n3- Criar conta Estudante \n");
+            Console.Write("Digite a opção que deseja: ");
+            int opcaoEscolhida = Convert.ToInt32(Console.ReadLine());
 
-        e.NumConta = 2;
-        e.Agencia = "223";
-        e.TitularConta = "Joao";
-        e.saldoConta = 500;
-        e.Taxa_Anuidade = 100;
-        e.Limite_Emprestimo = 1000;
-        e.Total_Emprestimo = 0;
+            switch(opcaoEscolhida)
+            {
+                case 1:
+                    Conta n = new Conta();
+                    nConta += 1;
 
-        Console.Write("Digite o valor para fazer emprestimo: ");
-        double valor = Convert.ToDouble(Console.ReadLine());
-        e.RealizarEmprestimo(valor);
+                    Console.Write("Agência: ");
+                    n.Agencia = Console.ReadLine();      
 
-        Console.WriteLine($"Seu saldo atual é de R${e.saldoConta}");
-        */
+                    Console.Write("Titular da conta: ");
+                    n.TitularConta = Console.ReadLine();
 
-        ContaEstudante a = new ContaEstudante();
+                    Console.Write("Saldo Inicial: ");
+                    n.saldoConta = Convert.ToDouble(Console.ReadLine());
 
-        a.NumConta = 3;
-        a.Agencia = "223";
-        a.TitularConta = "Pedro";
-        a.saldoConta = 500;
-        a.LimiteChequeEspecial = 200;
-        a.Cpf = "046.321.368-31";
+                    Console.WriteLine("\n-----------------------------------");
+                    Console.WriteLine("Conta criada Com sucesso!!!");
+                    Console.WriteLine("------------------------------------\n");
 
-        Console.Write("Digite um valor para sacar: ");
-        double saque = Convert.ToDouble(Console.ReadLine());
-        a.Sacar(saque);
+                    while (true)
+                    {
+                        Console.WriteLine("-----------------");
+                        Console.WriteLine("OPERAÇÕES");
+                        Console.WriteLine("-----------------");
 
-        Console.WriteLine($"Seu saldo atual é de R${a.saldoConta}");
+
+                        Console.WriteLine("1 - Sacar");
+                        Console.WriteLine("2 - Depósitar");
+                        Console.WriteLine("3 - Sair \n");
+                        Console.Write("Qual operação deseja fazer: ");
+                        int opcao = Convert.ToInt32(Console.ReadLine());
+                        switch (opcao)
+                        {
+                            case 1:
+                                Console.Write("Digite o valor do saque: ");
+                                int saque = Convert.ToInt32(Console.ReadLine());
+                                n.Sacar(saque);          
+                                break;
+                            case 2:
+                                Console.Write("Digite o valor do depósito: ");
+                                int deposito = Convert.ToInt32(Console.ReadLine());
+                                n.Depositar(deposito);
+                                break;
+                            case 3:
+                                Console.Clear();
+                                goto exit1;
+                            default:
+                                Console.WriteLine("Numero inválido!");
+                                break;
+
+                        }
+                    }
+                exit1:;
+                     break;
+
+                case 2:
+                    ContaEmpresa c = new ContaEmpresa();
+                    nConta += 1;
+
+          
+                    Console.Write("Agência: ");
+                    c.Agencia = Console.ReadLine();
+
+                    Console.Write("Titular da conta: ");
+                    c.TitularConta = Console.ReadLine();
+
+                    Console.Write("Saldo Inicial: ");
+                    c.saldoConta = Convert.ToDouble(Console.ReadLine());
+
+                    Console.Write("Taxa anuidade: ");
+                    c.Taxa_Anuidade = Convert.ToDouble(Console.ReadLine());
+
+                    Console.Write("Limite de empréstimo: ");
+                    c.Limite_Emprestimo = Convert.ToDouble(Console.ReadLine());
+
+                    c.Total_Emprestimo = 0;
+
+                    Console.WriteLine("\n-----------------------------------");
+                    Console.WriteLine("Conta criada Com sucesso!!!");
+                    Console.WriteLine("------------------------------------\n");
+
+                
+                    while(true)
+                    {
+                        Console.WriteLine("-----------------");
+                        Console.WriteLine("OPERAÇÕES");
+                        Console.WriteLine("-----------------");
+
+                        Console.WriteLine("1 - Empréstimo");
+                        Console.WriteLine("2 - Saque");
+                        Console.WriteLine("3 - Depósito");
+                        Console.WriteLine("4 - Sair \n");
+                        Console.Write("Qual operação deseja fazer: ");
+
+
+                        int opcao = Convert.ToInt32(Console.ReadLine());
+                        switch (opcao)
+                        {
+                            case 1:
+                                Console.Write("Digite o valor do empréstimo: ");
+                                int emprestimo = Convert.ToInt32(Console.ReadLine());
+                                c.RealizarEmprestimo(emprestimo);
+                                break;
+
+                            case 2:
+                                Console.Write("Digite o valor do saque: ");
+                                int saque = Convert.ToInt32(Console.ReadLine());
+                                c.Sacar(saque);                         
+                                break;
+
+                            case 3:
+                                Console.Write("Digite o valor do depósito: ");
+                                int deposito = Convert.ToInt32(Console.ReadLine());
+                                c.Depositar(deposito);
+                                break;
+
+                            case 4:
+                                Console.Clear();
+                                goto sair;
+                                
+
+                            default:
+                                Console.WriteLine("número inválido! \n");
+                                break;
+
+                        }
+                    }
+                sair:;    
+                    break;
+
+
+                case 3:
+                    ContaEstudante estudante = new ContaEstudante();
+                    nConta += 1;
+         
+                    Console.Write("Agência: ");
+                    estudante.Agencia = Console.ReadLine();
+
+                    Console.Write("Titular da conta: ");
+                    estudante.TitularConta = Console.ReadLine();
+
+                    Console.Write("Saldo Inicial: ");
+                    estudante.saldoConta = Convert.ToDouble(Console.ReadLine());
+
+                    Console.Write("Limite do cheque especial: ");
+                    estudante.LimiteCheque = Convert.ToDouble(Console.ReadLine());
+
+                    Console.Write("Cpf: ");
+                    estudante.Cpf = Console.ReadLine();
+
+                    Console.WriteLine("\n-----------------------------------");
+                    Console.WriteLine("Conta criada Com sucesso!!!");
+                    Console.WriteLine("------------------------------------\n");
+
+                    while(true)
+                    {
+                        Console.WriteLine("-----------------");
+                        Console.WriteLine("OPERAÇÕES");
+                        Console.WriteLine("-----------------");
+             
+                        Console.WriteLine("1 - Saque");
+                        Console.WriteLine("2 - Depósito");
+                        Console.WriteLine("3 - Sair \n");
+                        Console.Write("Qual operação deseja fazer: ");
+                        int opcao = Convert.ToInt32(Console.ReadLine());
+
+                        switch(opcao)
+                        {
+                            case 1: 
+                                Console.Write("Digite o valor do saque: ");
+                                int saque = Convert.ToInt32(Console.ReadLine());
+                                estudante.Sacar(saque);
+                                break;
+                            case 2:
+                                Console.Write("Digite o valor do depósito: ");
+                                int deposito = Convert.ToInt32(Console.ReadLine());
+                                estudante.Depositar(deposito);
+                                break;
+                            case 3:
+                                Console.Clear();
+                                goto exit;
+
+                            default:
+                                Console.WriteLine("Opção inválida!!! \n");
+                                break;
+                                
+                        }
+                    }
+                exit:;
+                    break;  
+            }
+        }
     }
 }

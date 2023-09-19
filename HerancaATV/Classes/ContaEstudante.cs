@@ -8,16 +8,16 @@ namespace HerancaATV.Classes
 {
     internal class ContaEstudante:Conta
     {
-        public double LimiteChequeEspecial { get; set; }
+        public double LimiteCheque { get; set; }
 
         public string Cpf {get; set;}
 
         public string NomeInstituicao { get; set;}
 
         public ContaEstudante (int NumConta, string Agencia, string TitularConta, double SaldoConta, 
-            double limiteChequeEspecial, string cpf, string nomeInstituicao): base(NumConta, Agencia, TitularConta, SaldoConta)
+            double limiteCheque, string cpf, string nomeInstituicao): base(NumConta, Agencia, TitularConta, SaldoConta)
         {
-            this.LimiteChequeEspecial = limiteChequeEspecial;
+            this.LimiteCheque = limiteCheque;
             this.Cpf = cpf;
             this.NomeInstituicao = nomeInstituicao;
         }
@@ -26,11 +26,11 @@ namespace HerancaATV.Classes
 
         }
 
-        public virtual void Sacar(double valor)
+        public virtual void Sacar(double saque)
         {
-            if(valor <= saldoConta + LimiteChequeEspecial)
+            if(saque <= saldoConta + LimiteCheque)
             {
-                saldoConta -= valor;
+                saldoConta -= saque;
                 Console.WriteLine("Saque realizado!");
             }
             else
